@@ -1,0 +1,211 @@
+ashis@ashish MINGW64 ~/Desktop/gitGitHubSSIU
+$ git clone https://github.com/aashiish0106/ssiuGitAndGithub.git 
+Cloning into 'ssiuGitAndGithub'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+ashis@ashish MINGW64 ~/Desktop/gitGitHubSSIU
+$ cd ssiuGitAndGithub
+
+ashis@ashish MINGW64 ~/Desktop/gitGitHubSSIU/ssiuGitAndGithub (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        about.txt
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ashis@ashish MINGW64 ~/Desktop/gitGitHubSSIU/ssiuGitAndGithub (main)
+$ git add index.html
+
+ashis@ashish MINGW64 ~/Desktop/gitGitHubSSIU/ssiuGitAndGithub (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        about.txt
+
+
+ashis@ashish MINGW64 ~/Desktop/gitGitHubSSIU/ssiuGitAndGithub (main)
+$ git add .
+
+ashis@ashish MINGW64 ~/Desktop/gitGitHubSSIU/ssiuGitAndGithub (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.txt
+        new file:   contact.txt
+        new file:   index.html
+
+
+ashis@ashish MINGW64 ~/Desktop/gitGitHubSSIU/ssiuGitAndGithub (main)
+$ git commit -m "Files(about.txt,contact.txt,index.html) added in the repo"
+[main a3846b5] Files(about.txt,contact.txt,index.html) added in the repo
+ 3 files changed, 1 insertion(+)
+ create mode 100644 about.txt
+ create mode 100644 contact.txt
+ create mode 100644 index.html
+
+ashis@ashish MINGW64 ~/Desktop/gitGitHubSSIU/ssiuGitAndGithub (main)
+$ git log
+commit a3846b5d2033052484e345fc4af48bad7d1aefbd (HEAD -> main)
+Author: ashishpandeyunknown-del <ashishpandeyunknown@gmail.com>
+Date:   Wed Aug 12 12:07:19 2026 +0530
+
+    Files(about.txt,contact.txt,index.html) added in the repo
+
+commit a77920b93a746de144d093eeb06cc74033423b35 (origin/main, origin/HEAD)
+Author: aashiish0106 <aashish.pandey.cg@gmail.com>
+Date:   Wed Aug 12 11:30:58 2026 +0530
+
+    Initial commit
+
+ashis@ashish MINGW64 ~/Desktop/gitGitHubSSIU/ssiuGitAndGithub (main)
+$ git log --oneline 
+a3846b5 (HEAD -> main) Files(about.txt,contact.txt,index.html) added in the repo
+a77920b (origin/main, origin/HEAD) Initial commit
+
+ashis@ashish MINGW64 ~/Desktop/gitGitHubSSIU/ssiuGitAndGithub (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   about.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        skills.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ashis@ashish MINGW64 ~/Desktop/gitGitHubSSIU/ssiuGitAndGithub (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   about.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        skills.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ashis@ashish MINGW64 ~/Desktop/gitGitHubSSIU/ssiuGitAndGithub (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   about.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        skills.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ashis@ashish MINGW64 ~/Desktop/gitGitHubSSIU/ssiuGitAndGithub (main)
+$ git add .
+
+ashis@ashish MINGW64 ~/Desktop/gitGitHubSSIU/ssiuGitAndGithub (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   about.txt
+        new file:   skills.txt
+
+
+ashis@ashish MINGW64 ~/Desktop/gitGitHubSSIU/ssiuGitAndGithub (main)
+$ git commit-m "Added a file name skill.txt and fixed the about.txt"
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+
+ashis@ashish MINGW64 ~/Desktop/gitGitHubSSIU/ssiuGitAndGithub (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   about.txt
+        new file:   skills.txt
+
+
+ashis@ashish MINGW64 ~/Desktop/gitGitHubSSIU/ssiuGitAndGithub (main)
+$ git commit -m "File added name skills.txt and fixed the about.txt"
+[main 23af480] File added name skills.txt and fixed the about.txt
+ 2 files changed, 8 insertions(+)
+ create mode 100644 skills.txt
+
+ashis@ashish MINGW64 ~/Desktop/gitGitHubSSIU/ssiuGitAndGithub (main)
+$ git config --global user.name
+ashishpandeyunknown-del
+
+ashis@ashish MINGW64 ~/Desktop/gitGitHubSSIU/ssiuGitAndGithub (main)
+$ git config --global user.email
+ashishpandeyunknown@gmail.com
+
+ashis@ashish MINGW64 ~/Desktop/gitGitHubSSIU/ssiuGitAndGithub (main)
+$ git push origin main 
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (7/7), 697 bytes | 232.00 KiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/aashiish0106/ssiuGitAndGithub.git
+   a77920b..23af480  main -> main
+
+ashis@ashish MINGW64 ~/Desktop/gitGitHubSSIU/ssiuGitAndGithub (main)
+$ git config --global user.name "aashiish0106"
+
+ashis@ashish MINGW64 ~/Desktop/gitGitHubSSIU/ssiuGitAndGithub (main)
+$ git config --global user.email "aashish.pandey.cg@gmail.com"
+
+ashis@ashish MINGW64 ~/Desktop/gitGitHubSSIU/ssiuGitAndGithub (main)
+$ git config --global user.email
+aashish.pandey.cg@gmail.com
+
+ashis@ashish MINGW64 ~/Desktop/gitGitHubSSIU/ssiuGitAndGithub (main)
+$ git config --global user.name
+aashiish0106
+
+ashis@ashish MINGW64 ~/Desktop/gitGitHubSSIU/ssiuGitAndGithub (main)
+$ 
+
